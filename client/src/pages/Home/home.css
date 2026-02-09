@@ -1,0 +1,42 @@
+/* ============================
+   CONTACT + FOUNDER SECTION
+============================ */
+.contact-founder-section {
+  padding: 4rem 2rem;
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-founder-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.contact-founder-card {
+  flex: 1 1 500px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* ============================
+   RESPONSIVE DESIGN
+============================ */
+@media (max-width: 992px) {
+  .contact-founder-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-founder-card {
+    width: 100%;
+    max-width: 600px;
+  }
+}
