@@ -1,6 +1,6 @@
 // AppDownload.jsx
 import React from 'react';
-import './appdownload.css';
+import './appDownload.css';
 import { fassets } from '../../assets/frontend_assets/assets';
 
 export default function AppDownload() {
