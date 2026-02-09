@@ -1,0 +1,89 @@
+.header {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  padding: 0 1rem;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  max-width: 600px;
+  z-index: 2;
+  position: relative;
+}
+
+.header p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  max-width: 500px;
+  z-index: 2;
+  position: relative;
+}
+
+/* Buttons Container */
+.header-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  z-index: 2;
+  position: relative;
+}
+
+/* Button Base */
+.header-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Primary Button */
+.header-btn.primary {
+  background: linear-gradient(45deg, #ffb703, #f8c10e);
+}
+
+/* Secondary Button */
+.header-btn.secondary {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Hover */
+.header-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .header h2 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+}
