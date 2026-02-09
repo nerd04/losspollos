@@ -4,7 +4,7 @@ import { FaUser, FaEnvelope, FaCommentDots } from 'react-icons/fa';
 import './contactus.css';
 
 const ContactUsCard = () => (
-  <div className="contact-card">
+  <div className="contact-card" id='contact-us'>
     <div className="contact-header">
       <h2>Get in Touch</h2>
       <p>

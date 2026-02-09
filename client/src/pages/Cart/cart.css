@@ -53,6 +53,13 @@
   color: #d7263d;
 }
 
+.cart-items-grid {
+  display: grid;
+  grid-template-columns: 80px 1fr 100px 100px 100px 80px;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
 
 .cart-bottom {
   display: flex;
